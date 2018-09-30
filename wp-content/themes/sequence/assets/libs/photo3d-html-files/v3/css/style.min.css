@@ -1,0 +1,190 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('../../assets/libs/photo3d-html-files/v3/css/fonts/icomoon.eot');
+	src: url('../../assets/libs/photo3d-html-files/v3/css/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/libs/photo3d-html-files/v3/css/fonts/icomoon.ttf') format('truetype'),
+		url('../../assets/libs/photo3d-html-files/v3/css/fonts/icomoon.woff') format('woff'),
+		url('../../assets/libs/photo3d-html-files/v3/css/fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.wrapper--top {
+	position: relative;
+	display: inline-block;
+}
+
+.wrapper--3d {
+	background: #fff;
+	overflow: hidden;
+}
+
+.wrapper--panel, .wrapper--3d {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper--3d canvas {
+	position: absolute;
+}
+
+.icon--panel {
+	padding: 10px;
+	position: absolute;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/*line-height: 1;*/
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon--panel.ios-top
+{
+	top:0 !important;
+	margin-top:0 !important;
+}
+
+
+.icon--panel a:hover {
+	opacity: 0.7;
+	/*filter: alpha(opacity = 70);*/
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+.icon--panel a {
+	color: #fff;
+	/*width: 30px;*/
+	/*height: 30px;*/
+	font-size: 30px;
+	cursor: pointer;
+	padding: 10px;
+	background: #000;
+	opacity: 0.5;
+	/*filter: alpha(opacity = 50);*/
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	border: 1px solid #fff;
+	border-radius: 20px 5px;
+	text-align: center;
+	line-height: normal !important;
+}
+
+.wrapper--top.small .icon--panel a {
+	padding:7px;
+	/*width:15px;*/
+	/*height: 15px;*/
+	font-size:15px;
+	border-radius: 10px 3px !important;
+}
+
+
+.icon--panel a.not--active, .icon--panel a.not--active:hover{
+	color: #555;
+	border-color:#555;
+	opacity: 0.5;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+#top-navigationConsole_img .ip--horizon {
+	width: 100%; 
+	/*border: 1px solid red;*/
+	left: 0;
+	display: flex;
+	justify-content: center;
+	top: 95%!important;
+}
+
+
+/* Модальные окна в секции options*/
+.wrapper--top .ip--vertical {
+	/*border: 1px solid green;*/
+	left: 10%!important; 
+}
+.wrapper--top .ip--horizon {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/*border: 1px solid green; */
+	top: 80%!important;
+}
+
+    @media only screen and (max-width : 490px) {
+    .wrapper--top .ip--vertical {
+    	/*border: 1px solid green;*/
+    	left: 20%!important; 
+    }
+     .close {
+     	font-size: 36px;
+     	top: -20px;
+     	right: 10px;
+     	color: #fff;
+     }
+     .close::after {
+     	content: '';
+     	position: absolute;
+     	z-index: -1;
+     	right: -10px;
+     	top: 10px;
+     	width: 40px;
+     	height: 40px;
+     	border-radius: 50%;
+     	background-color: #67ADC2;
+     	color: #fff;
+     }
+     .modal-content {
+     	min-height: 270px;
+     	max-width: 95%; 
+     	width: 100%;
+     	overflow: hidden;
+     }
+     .wrapper--3d canvas {
+     	width: 100%;
+     	max-width: 300px; 
+     	border: 1px solid blue;
+     	position: relative;
+     	margin:0 auto;
+     	margin-right: 50%; 
+     	margin-left:  50%; 
+     }     
+     .wrapper--3d {
+     	/*border: 1px solid red; */
+     }
+
+     .modal-body {
+     	text-align: center;
+     	max-width: 300px; 
+     }
+     .modal-body img {
+     	width: 100%;
+
+     	height: auto;
+     }
+}
+
+
+
+
+.ip--horizon a {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.ip--vertical {
+	padding-bottom: 0;
+}
+
+.ip--vertical a {
+	margin-bottom: 10px;
+	display: block;
+}
+
+

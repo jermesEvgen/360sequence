@@ -1,0 +1,714 @@
+/*!
+Theme Name: sequence theme
+Theme URI: 
+Author: Evgen Jermes Iusupov
+Author URI:#
+Description: 3D фотосъемка товара
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: sequence
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+
+
+
+.headerBody_product {
+	background-image: url(img/productHeader-bg.png);
+}
+.ctaBlock {
+	background-image: url(img/bg-Cta.png);
+}
+.headerBody_product {
+	background-image: url(assembly/img/productHeader-bg.png)!important;
+}
+@media only screen and (max-width : 730px) {
+	.headerBody_product__3dimg.mobileScreen_block {
+		background-image: url(assembly/img/productHeader-bg.png)!important;
+	}
+}
+.ctaBlock {
+	background-image: url(assembly/img/bg-Cta.png)!important;
+}
+.cd-auto-hide-header {
+	padding: .5em 0;
+}
+
+
+/*  Спрайты кросовок   */
+
+/*.bg-tmbl_1_1 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -10px!important;
+}
+
+
+.bg-tmbl_1_2 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -710px!important;
+}
+
+
+.bg-tmbl_1_3_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -150px!important;
+}
+
+
+.bg-tmbl_1_4 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -150px!important;
+}
+
+
+.bg-tmbl_1_5 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -10px!important;
+}
+
+
+.bg-tmbl_1_6 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -150px!important;
+}
+
+
+.bg-tmbl_1_7 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -290px!important;
+}
+
+
+.bg-tmbl_1_8 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -290px!important;
+}
+
+
+.bg-tmbl_1_9 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -290px!important;
+}
+
+
+.bg-tmbl_1_10 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -10px!important;
+}
+
+
+.bg-tmbl_1_11_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -150px!important;
+}
+
+
+.bg-tmbl_1_12 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -290px!important;
+}
+
+
+.bg-tmbl_1_13 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -430px!important;
+}
+
+
+.bg-tmbl_1_14 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -430px!important;
+}
+
+
+.bg-tmbl_1_15 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -430px!important;
+}
+
+
+.bg-tmbl_1_16_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -430px!important;
+}
+
+
+.bg-tmbl_1_17 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -10px!important;
+}
+
+
+.bg-tmbl_1_18 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -150px!important;
+}
+
+
+.bg-tmbl_1_19_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -290px!important;
+}
+
+
+.bg-tmbl_1_20 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -430px!important;
+}
+
+
+.bg-tmbl_1_21 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -570px!important;
+}
+
+
+.bg-tmbl_1_22 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -570px!important;
+}
+
+
+.bg-tmbl_1_23 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -570px!important;
+}
+
+
+.bg-tmbl_1_24 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -570px!important;
+}
+
+
+.bg-tmbl_1_25 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -570px!important;
+}
+
+
+.bg-tmbl_1_26_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -10px!important;
+}
+
+
+.bg-tmbl_1_27 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -150px!important;
+}
+
+
+.bg-tmbl_1_28 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -290px!important;
+}
+
+
+.bg-tmbl_1_29 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -430px!important;
+}
+
+
+.bg-tmbl_1_30 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -570px!important;
+}
+
+
+.bg-tmbl_1_31 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -710px!important;
+}
+
+
+.bg-tmbl_1_32 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -710px!important;
+}
+
+
+.bg-tmbl_1_33 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -710px!important;
+}
+
+
+.bg-tmbl_1_34 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -710px!important;
+}
+
+
+.bg-tmbl_1_35 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -710px!important;
+}
+
+
+.bg-tmbl_1_36_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -710px!important;
+}
+
+
+.bg-tmbl_2_1 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -10px!important;
+}
+
+
+.bg-tmbl_2_2_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -150px!important;
+}
+
+
+.bg-tmbl_2_3 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -290px!important;
+}
+
+
+.bg-tmbl_2_4 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -430px!important;
+}
+
+
+.bg-tmbl_2_5 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -570px!important;
+}
+
+
+.bg-tmbl_2_6 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -710px!important;
+}
+
+
+.bg-tmbl_2_7 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -850px!important;
+}
+
+
+.bg-tmbl_2_8 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -850px!important;
+}
+
+
+.bg-tmbl_2_9_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -850px!important;
+}
+
+
+.bg-tmbl_2_10 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -850px!important;
+}
+
+
+.bg-tmbl_2_11 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -850px!important;
+}
+
+
+.bg-tmbl_2_12 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -850px!important;
+}
+
+
+.bg-tmbl_2_13_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -850px!important;
+}
+
+
+.bg-tmbl_2_14 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -10px!important;
+}
+
+
+.bg-tmbl_2_15 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -150px!important;
+}
+
+
+.bg-tmbl_2_16 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -290px!important;
+}
+
+
+.bg-tmbl_2_17 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -430px!important;
+}
+
+
+.bg-tmbl_2_18 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -570px!important;
+}
+
+
+.bg-tmbl_2_19 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -10px!important;
+}
+
+
+.bg-tmbl_2_20 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -850px!important;
+}
+
+
+.bg-tmbl_2_21 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -990px!important;
+}
+
+
+.bg-tmbl_2_22 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -990px!important;
+}
+
+
+.bg-tmbl_2_23 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -990px!important;
+}
+
+
+.bg-tmbl_2_24_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -990px!important;
+}
+
+
+.bg-tmbl_2_25_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -990px!important;
+}
+
+
+.bg-tmbl_2_26 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -990px!important;
+}
+
+
+.bg-tmbl_2_27 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -990px!important;
+}
+
+
+.bg-tmbl_2_28 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -990px!important;
+}
+
+
+.bg-tmbl_2_29 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -10px!important;
+}
+
+
+.bg-tmbl_2_30 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -150px!important;
+}
+
+
+.bg-tmbl_2_31 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -290px!important;
+}
+
+
+.bg-tmbl_2_32 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -430px!important;
+}
+
+
+.bg-tmbl_2_33_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -570px!important;
+}
+
+
+.bg-tmbl_2_34 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -710px!important;
+}
+
+
+.bg-tmbl_2_35 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -850px!important;
+}
+
+
+.bg-tmbl_2_36 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -990px!important;
+}
+
+
+.bg-tmbl_3_1 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -1130px!important;
+}
+
+
+.bg-tmbl_3_2 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -1130px!important;
+}
+
+
+.bg-tmbl_3_3 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -1130px!important;
+}
+
+
+.bg-tmbl_3_4 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -1130px!important;
+}
+
+
+.bg-tmbl_3_5_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -1130px!important;
+}
+
+
+.bg-tmbl_3_6 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -1130px!important;
+}
+
+
+.bg-tmbl_3_7 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -1130px!important;
+}
+
+
+.bg-tmbl_3_8 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -1130px!important;
+}
+
+
+.bg-tmbl_3_9_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -1130px!important;
+}
+
+
+.bg-tmbl_3_10 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -10px!important;
+}
+
+
+.bg-tmbl_3_11 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -150px!important;
+}
+
+
+.bg-tmbl_3_12 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -290px!important;
+}
+
+
+.bg-tmbl_3_13_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -430px!important;
+}
+
+
+.bg-tmbl_3_14 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -570px!important;
+}
+
+
+.bg-tmbl_3_15 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -710px!important;
+}
+
+
+.bg-tmbl_3_16 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -850px!important;
+}
+
+
+.bg-tmbl_3_17 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -990px!important;
+}
+
+
+.bg-tmbl_3_18 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -1130px!important;
+}
+
+
+.bg-tmbl_3_19 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -10px -1270px!important;
+}
+
+
+.bg-tmbl_3_20 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -150px -1270px!important;
+}
+
+
+.bg-tmbl_3_21 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -290px -1270px!important;
+}
+
+
+.bg-tmbl_3_22_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -430px -1270px!important;
+}
+
+
+.bg-tmbl_3_23 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -570px -1270px!important;
+}
+
+
+.bg-tmbl_3_24 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -710px -1270px!important;
+}
+
+
+.bg-tmbl_3_25 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -850px -1270px!important;
+}
+
+
+.bg-tmbl_3_26_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -990px -1270px!important;
+}
+
+
+.bg-tmbl_3_27 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1130px -1270px!important;
+}
+
+
+.bg-tmbl_3_28 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1270px -1270px!important;
+}
+
+
+.bg-tmbl_3_29 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1410px -10px!important;
+}
+
+
+.bg-tmbl_3_30 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1410px -150px!important;
+}
+
+
+.bg-tmbl_3_31 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1410px -290px!important;
+}
+
+
+.bg-tmbl_3_32_color {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1410px -430px!important;
+}
+
+.bg-tmbl_3_33 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1410px -570px!important;
+}
+
+
+.bg-tmbl_3_34 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1410px -710px!important;
+}
+
+
+.bg-tmbl_3_35 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1410px -850px!important;
+}
+
+
+.bg-tmbl_3_36 {
+    width: 120px; height: 120px;
+    background: url('assembly/img/slider_sneakers/thumbnail-img/css_sprites.png') -1410px -990px!important;
+}
+
+*/
